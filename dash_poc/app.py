@@ -36,7 +36,7 @@ the_list = dBoot.ListGroup(
     ],
     id='list_group'
 )
-the_table = dAGrid.AgGrid(id="get-started-example-basic", rowData=df.to_dict("records"), columnDefs= column_names) 
+the_table = dAGrid.AgGrid(id="get-started-example-basic", rowData=df.to_dict("records"), columnDefs=column_names, defaultColDef={"editable": True}) 
 the_controls = dCore.RadioItems(options=control_options, value=control_options[0], id='controls-and-radio-item')
 
 the_detail = dCore.Graph(figure={}, id='detail_chart')
